@@ -1,0 +1,24 @@
+<div class="container">
+  <a
+    routerLink="/system-solar"
+    [queryParams]="{ name: planet.name }"
+    routerLinkActive="active"
+  >
+    <div class="card">
+      <div class="imgBx">
+        <img loading="lazy" src="{{ planet.imageUrl }}" alt="nike-air-shoe" />
+      </div>
+
+      <div class="contentBx">
+        <h2>{{ planet.name }}</h2>
+        <span>{{ planet.history }}</span>
+        <a
+          routerLink="/system-solar"
+          [queryParams]="{ name: planet.name }"
+          routerLinkActive="active"
+          >Ver sistema solar</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
